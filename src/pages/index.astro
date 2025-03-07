@@ -1,0 +1,122 @@
+---
+import Layout from "../layouts/Layout.astro";
+import background from "@images/banner.jpg";
+import { Image } from "astro:assets";
+import wheel from "@images/wheel.jpg";
+import garage from "@images/garage.jpg";
+import wall from "@images/wall.jpg";
+---
+
+<Layout title="Aksöz Motor">
+	<main>
+		<section class="relative w-full h-screen">
+			<Image
+				src={background}
+				fit="cover"
+				alt="Background"
+				width={1920}
+				height={1080}
+				class="absolute w-full h-full object-cover object-left-bottom sm:object-bottom md:object-top brightness-50"
+			/>
+			<div
+				class="container relative text-gray-200 leading-8 font-semibold py-20 md:py-10"
+			>
+				<div class="w-2/3 mr-auto sm:w-full lg:w-1/2 lg:mx-auto">
+					<h1
+						class="text-gray-400 opacity-55 relative lg:text-center text-2xl md:text-3xl mb-2 md:mb-4"
+					>
+						Aksöz Motor
+					</h1>
+					<div class="text-4xl md:text-7xl lg:text-center relative">
+						Motorsikletiniz için <span
+							class="inline-block relative after:hidden after:absolute md:after:block after:content-[''] after:w-full after:h-2 after:-skew-2 after:bg-green-600 after:border-b-4 after:border-green-700 text-green-600 md:text-white"
+							>Usta</span
+						> dokunuşu
+					</div>
+					<p
+						class="text-gray-200 text-lg md:text-xl lg:text-center mt-4 md:mt-6"
+					>
+						Bakım, onarım ve performans artırımıyla sürüş deneyiminizi
+						yenileyin!
+					</p>
+				</div>
+				
+			</div>
+		</section>
+		<section class="bg-black py-20">
+			<div class="container">
+				<h2
+					class="text-gray-100 text-5xl lg:text-7xl md:text-center mb-6 lg:mb-8"
+				>
+					Hizmetlerimiz
+				</h2>
+				<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+					<div
+						class="box-border border-gray-900 border-1 rounded-sm text-gray-100"
+					>
+						<Image
+							src={wheel}
+							alt="Motorsiklet Bakımı"
+							width={500}
+							height={300}
+							fit="cover"
+							class="grayscale"
+						/>
+						<div class="py-2 lg:pt-4 px-2">
+							<p class="text-xl lg:text-3xl mb-4 md:mb-5">Bakım</p>
+							<p>
+								Motosikletinizin ömrünü uzatmak ve güvenli bir sürüş sağlamak
+								için düzenli bakım şarttır. Yağ değişimi, fren balatalarının
+								kontrolü, zincir bakımı ve genel kontroller ile motorunuz her
+								zaman en iyi durumda olur. Profesyonel ekibimizle
+								motosikletinizin performansını koruyun.
+							</p>
+						</div>
+					</div>
+					<div
+						class="box-border border-gray-900 border-1 rounded-sm text-gray-100"
+					>
+						<Image
+							src={garage}
+							alt="Motorsiklet Bakımı"
+							width={500}
+							height={300}
+							fit="cover"
+							class="grayscale"
+						/>
+						<div class="py-2 lg:pt-4 px-2">
+							<p class="text-xl lg:text-3xl mb-4 md:mb-5">Onarım</p>
+							<p>
+								Motosikletinizde meydana gelen mekanik ve elektriksel arızaları
+								en kısa sürede gideriyoruz. Motor, şanzıman, süspansiyon, fren
+								sistemi ve elektrik aksamındaki her türlü sorunu uzman
+								ekibimizle çözüyoruz. Sorunsuz ve güvenli bir sürüş için en iyi
+								çözümleri sunuyoruz.
+							</p>
+						</div>
+					</div>
+					<div
+						class="box-border border-gray-900 border-1 rounded-sm text-gray-100"
+					>
+						<Image
+							src={wall}
+							alt="Motorsiklet Bakımı"
+							width={500}
+							height={300}
+							fit="cover"
+							class="grayscale"
+						/>
+						<div class="py-2 lg:pt-4 px-2">
+							<p class="text-xl lg:text-3xl mb-4 md:mb-5">
+								Performans Artırımı
+							</p>
+							<p>
+								Sürüş deneyiminizi bir üst seviyeye taşımak ister misiniz? Egzoz sistemi yükseltmeleri, süspansiyon iyileştirmeleri, hava filtreleri ve motor modifikasyonları ile motosikletinizin gücünü ve tepkisini artırıyoruz. Daha akıcı, güçlü ve keyifli bir sürüş için özel çözümler sunuyoruz.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
