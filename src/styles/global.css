@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 @utility container {
-  @apply mx-auto flow-root px-5 md:px-10 box-border;
+	@apply mx-auto flow-root px-5 md:px-10 box-border;
 }

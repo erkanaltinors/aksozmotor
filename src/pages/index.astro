@@ -1,10 +1,10 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import background from "@images/banner.jpg";
 import { Image } from "astro:assets";
-import wheel from "@images/wheel.jpg";
+import background from "@images/banner.jpg";
 import garage from "@images/garage.jpg";
 import wall from "@images/wall.jpg";
+import wheel from "@images/wheel.jpg";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Aksöz Motor">
@@ -16,7 +16,7 @@ import wall from "@images/wall.jpg";
 				alt="Background"
 				width={1920}
 				height={1080}
-				class="absolute w-full h-full object-cover object-left-bottom sm:object-bottom md:object-top brightness-50"
+				class="absolute w-full h-full object-cover object-left-bottom sm:object-bottom md:object-top brightness-50 grayscale"
 			/>
 			<div
 				class="container relative text-gray-200 leading-8 font-semibold py-20 md:py-10"
@@ -28,7 +28,8 @@ import wall from "@images/wall.jpg";
 						Aksöz Motor
 					</h1>
 					<div class="text-4xl md:text-7xl lg:text-center relative">
-						Motorsikletiniz için <span
+						Motorsikletiniz için
+						<span
 							class="inline-block relative after:hidden after:absolute md:after:block after:content-[''] after:w-full after:h-2 after:-skew-2 after:bg-green-600 after:border-b-4 after:border-green-700 text-green-600 md:text-white"
 							>Usta</span
 						> dokunuşu
@@ -40,20 +41,19 @@ import wall from "@images/wall.jpg";
 						yenileyin!
 					</p>
 				</div>
-				
 			</div>
 		</section>
-		<section class="bg-black py-20">
+		<section class="bg-[#111] py-20">
 			<div class="container">
 				<h2
 					class="text-gray-100 text-5xl lg:text-7xl md:text-center mb-6 lg:mb-8"
 				>
 					Hizmetlerimiz
 				</h2>
-				<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-					<div
-						class="box-border border-gray-900 border-1 rounded-sm text-gray-100"
-					>
+				<div
+					class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8"
+				>
+					<div class="box-border rounded-sm text-gray-100">
 						<Image
 							src={wheel}
 							alt="Motorsiklet Bakımı"
@@ -62,7 +62,7 @@ import wall from "@images/wall.jpg";
 							fit="cover"
 							class="grayscale"
 						/>
-						<div class="py-2 lg:pt-4 px-2">
+						<div class="p-2 md:p-6 bg-black">
 							<p class="text-xl lg:text-3xl mb-4 md:mb-5">Bakım</p>
 							<p>
 								Motosikletinizin ömrünü uzatmak ve güvenli bir sürüş sağlamak
@@ -111,7 +111,11 @@ import wall from "@images/wall.jpg";
 								Performans Artırımı
 							</p>
 							<p>
-								Sürüş deneyiminizi bir üst seviyeye taşımak ister misiniz? Egzoz sistemi yükseltmeleri, süspansiyon iyileştirmeleri, hava filtreleri ve motor modifikasyonları ile motosikletinizin gücünü ve tepkisini artırıyoruz. Daha akıcı, güçlü ve keyifli bir sürüş için özel çözümler sunuyoruz.
+								Sürüş deneyiminizi bir üst seviyeye taşımak ister misiniz? Egzoz
+								sistemi yükseltmeleri, süspansiyon iyileştirmeleri, hava
+								filtreleri ve motor modifikasyonları ile motosikletinizin gücünü
+								ve tepkisini artırıyoruz. Daha akıcı, güçlü ve keyifli bir sürüş
+								için özel çözümler sunuyoruz.
 							</p>
 						</div>
 					</div>
