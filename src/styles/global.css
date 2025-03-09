@@ -1,5 +1,36 @@
 @import "tailwindcss";
 
+@layer base {
+	:root {
+		--font-sans: 'Bangers',
+			ui-sans-serif,
+			system-ui,
+			sans-serif,
+			"Apple Color Emoji",
+			"Segoe UI Emoji",
+			"Segoe UI Symbol",
+			"Noto Color Emoji";
+
+		--font-serif: 'Questrial',
+			ui-serif,
+			Georgia,
+			Cambria,
+			"Times New Roman",
+			Times,
+			serif;
+		font-family: var(--font-serif);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: var(--font-sans);
+	}
+}
+
 @utility container {
 	@apply mx-auto flow-root px-5 md:px-10 box-border;
 }
